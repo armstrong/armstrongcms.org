@@ -1,0 +1,521 @@
+html {
+    background:url("../images/bg.png") repeat-x #8a421c;
+}
+
+body {
+    text-align:center;
+    font-family:"Helvetica Neue","Helvetica",sans-serif;
+    font-size:14px;
+}
+
+.left { float: left; }
+
+/****************  all rows  ***********************/
+
+.row.dark {
+    background:url("../images/weave-dark.png");
+    padding:15px 0;
+    color:#f1eee5;
+}
+
+.row.dark a {
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+.row.dark a:hover {
+    text-decoration:none;
+}
+
+.row.dark .container {
+    background:url("../images/weave-light.png");
+    border-top:1px solid #181818;
+}
+
+.row.light {
+    background:url("../images/paper-dark.png");
+    padding:15px 0;
+    color:#444444;
+}
+
+.row.light .container {
+    background:url("../images/paper-lite.png");
+    border-top:1px solid #e2dfd6;
+}
+
+.row .container {
+    min-height:200px;
+    padding-bottom:15px;
+}
+
+.content {
+    width:940px;
+    margin:0 auto;
+    text-align:left;
+    position:relative;
+}
+
+/****************  columns  ***********************/
+
+.col {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    vertical-align:top;
+    margin:0;
+    padding:0;
+}
+
+.twocol {
+    background:url(../images/l-div.png) repeat-x 0 100%;
+    padding-bottom:30px;
+}
+
+.twocol .col {
+    width:47%;
+    margin-right:3%;
+}
+
+.twocol .col.last {
+    margin-right:0;
+}
+
+.threecol .col {
+    width:30%;
+    margin-right:3%;
+}
+
+.col.last {
+    margin-right:0px;
+}
+
+
+/****************  row one  ***********************/
+.row-one {
+    border-top:1px solid #bb6133;
+    margin-top:7px;
+    background:url("../images/stbg.png") ;
+    padding-bottom:20px;
+}
+
+.row-one .content {
+    border-top:1px solid #bb6133;
+    margin-top:-1px;
+    
+}
+
+#logo {
+    position:absolute;
+    left:0;
+    top:33px;
+    margin:0;
+}
+
+#logo a {
+    width:340px;
+    height:45px;
+    display:block;
+    background:url("../images/logo.png") no-repeat;
+    overflow:hidden;
+    text-indent:-999px;
+}
+
+#nav {
+    margin:0;
+    padding:0;
+    position:absolute;
+    right:0;
+    top:41px;
+}
+
+#nav li {
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:left;
+}
+
+#nav li a {
+    margin:0;
+    display:block;
+    font-size:13px;
+    color:#f1eee5;
+    font-family:"Helvetica Neue","Helvetica",sans-serif;
+    text-decoration:none;
+    padding:8px 12px;
+    margin-left:10px;
+}
+
+#nav li.current a {
+       -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+            border-radius: 6px; 
+    background:#191919;
+}
+
+.row-one h2 {
+    margin-top:80px;
+    color:#f1eee5;
+    font-weight:normal;
+    font-family:"Georgia",serif;
+    font-size:26px;
+    font-style:italic;
+    text-align:center;
+    padding:40px;
+    text-shadow:0 1px 5px #000000;
+    background:url("../images/hdhr.png") 0 100% no-repeat;
+}
+
+.bitaboutit {
+    text-shadow:0 1px 1px #131313;
+    font-family:"Helvetica Neue","Helvetica",sans-serif;
+    line-height:2em;
+    width:375px;
+    display:inline-block;
+    vertical-align:top;
+    *display:inline;
+    zoom:1;
+    color:#f5b99a;
+    font-size:15px;
+    padding-right:15px;
+    background:url("../images/vertbg.gif") 100% 0 repeat-y;
+    
+}
+
+.bitaboutit em {
+    display:block;
+    margin-top:20px;
+}
+
+.bitaboutit em span {
+    display:block;
+    margin-left:10px;
+    font-size:14px;
+}
+
+/* contact */
+.row-one .contact {
+    width:514px;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    vertical-align:top;
+    margin-left:32px;
+}
+
+.row-one .contact p {
+    color:#fcd396;
+    font-weight:bold;
+    text-shadow:0 1px 1px #131313;
+    font-family:"Helvetica Neue","Helvetica",sans-serif;
+    font-size:18px;
+}
+
+.row-one .contact .form-elements {
+    position:relative;
+    padding-bottom: 10px;
+}
+
+#contact_form { 
+    position: relative;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+    #contact_form p {
+        text-shadow:0 1px 1px #131313;
+        font-family:"Helvetica Neue","Helvetica",sans-serif;
+        line-height:2em;
+        text-align: center;
+        width:375px;
+        color:#f5b99a;
+        font-size:15px;
+    }
+    
+#bottom_contact_form { 
+
+}
+    #bottom_contact_form #message { 
+        text-align: center;
+    }
+    #bottom_contact_form label.error { 
+        color: #ffe65d;
+    }
+
+.row-one .contact .textbox {
+    display:block;
+    margin-bottom:10px;
+    width:50%;
+}
+.row-one .contact .textbox,
+.row-one .contact textarea {
+    background:#8c4825;
+    border:5px solid #743716;
+    color:#deb5a0;
+    padding:10px;
+    font-size:16px;
+    text-align:left;
+       -moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+            border-radius: 6px; 
+}
+
+.row-one .contact textarea {
+    position:absolute;
+    right:0;
+    top:0;
+    width:48%;
+    height:170px;
+}
+
+.row-one .contact button.awesome {
+    float:right;
+    width:48%;
+    font-family:"Georgia",serif;
+    font-size:15px;
+    color:#252525;
+    font-style:italic;
+    padding:12px 14px;
+    font-weight:normal;
+    text-shadow:1px 1px 1px #ffffff;
+}
+
+/****************  row 2  ***********************/
+
+.row-two h3 {
+    text-align:center;
+    font-size:24px;
+    color:#fcd396;
+    text-shadow:0 1px 5px #000000;
+}
+
+.row-two ul {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    width:30%;
+    vertical-align:top;
+    margin:0;
+    padding:0;
+    margin:0 10px;
+}
+
+.row-two ul li {
+    list-style-image:url(../images/star.png);
+    text-shadow:0 1px 5px #000000;
+    font-weight:bold;
+    padding:8px 10px 8px 0;
+}
+
+/**************** row three  ***********************/
+
+.row-three h3 {
+    text-align:center;
+}
+
+/****************  foot  ***********************/
+.foot {
+    padding:10px 0;
+    background:#0d0d0d;
+    color:#626262;
+}
+
+.foot p {
+    margin:0;
+}
+
+.foot p.pbj {
+    float:right;
+}
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+/* base.css, part of YUI's CSS Foundation */
+h1,h2,h3,h4,h5,h6,strong {
+	/*bringing boldness back to headers and the strong element*/
+	font-weight:bold; 
+}
+h1 {
+	/*18px via YUI Fonts CSS foundation*/
+	font-size:138.5%;  
+}
+h2 {
+	/*16px via YUI Fonts CSS foundation*/
+	font-size:123.1%; 
+}
+h3 {
+	/*14px via YUI Fonts CSS foundation*/
+    font-size:24px;
+    color:#000000;
+    font-family:"Georgia",serif;
+    font-style:italic;
+    font-weight:normal;
+}
+h1,h2,h3 {
+	/* top & bottom margin based on font size */
+	margin:1em 0;
+}
+abbr,acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+em {
+	/*bringing italics back to the em element*/
+	font-style:italic;
+}
+blockquote,ul,ol,dl {
+	/*giving blockquotes and lists room to breath*/
+	margin:1em;
+}
+ol,ul,dl {
+	/*bringing lists on to the page with breathing room */
+	margin-left:2em;
+}
+ol li {
+	/*giving OL's LIs generated numbers*/
+	list-style: decimal outside;	
+}
+ul li {
+	/*giving UL's LIs generated disc markers*/
+	list-style: disc outside;
+}
+dl dd {
+	/*providing spacing for definition terms*/
+	margin-left:1em;
+}
+th,td {
+	/*borders and padding to make the table readable*/
+	border:1px solid #000;
+	padding:.5em;
+}
+th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:center;
+}
+caption {
+	/*coordinated margin to match cell's padding*/
+	margin-bottom:.5em;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+p,fieldset,table,pre {
+	/*so things don't run into each other*/
+	margin-bottom:1em;
+}
+
+
+/**************** FAQ Definition Lists ***********************/
+
+dl dt {
+    margin:0;
+    padding:0;
+    color:#333333;
+    font-weight:bold;
+    font-size:14px;
+}
+
+dl dd {
+    margin:10 0 20px 0;
+    padding:10px;
+    background:#edebe4;
+    color:#444444;
+    font-size:13px;
+       -moz-box-shadow:inset 0px 0px 1px #c3bfb4; 
+    -webkit-box-shadow:inset 0px 0px 1px #c3bfb4; 
+            box-shadow:inset 0px 0px 1px #c3bfb4; 
+               -moz-border-radius: 6px; 
+            -webkit-border-radius: 6px; 
+                    border-radius: 6px; 
+}
+
+/**************** row four  ***********************/
+.row-four .content {
+    padding:25px 0 0 0;
+}
+
+.row-four .content h2 {
+    margin:0 0 10px 0;
+}
+
+.row-four .left {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    width:31%;
+    margin-right:0;
+    vertical-align:top;
+}
+
+.row-four .left h2 {
+    font-size:13px;
+    color:#f1eee5;
+}
+
+.row-four .left p {
+    font-size:12px;
+    margin-bottom:20px;
+    line-height:1.8em;
+    color:#979797;
+}
+
+.row-four .right {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    width:66%;
+    vertical-align:top;
+}
+
+/* contact */
+.row-four .contact {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    vertical-align:top;
+}
+
+.row-four .contact .form-elements {
+    position:relative;
+    margin-left:20px;
+}
+
+.row-four .contact .textbox {
+    display:block;
+    margin-bottom:10px;
+    width:49%;
+}
+.row-four .contact .textbox,
+.row-four .contact textarea {
+    background:#101010;
+    border:0px solid #743716;
+    color:#979797;
+    padding:10px;
+    font-family:arial,sans-serif;
+    font-size:12px;
+    text-align:left;
+       -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+            border-radius: 3px; 
+}
+
+.row-four .contact textarea {
+    position:absolute;
+    right:0;
+    top:0;
+    width:49%;
+    height:80px;
+}
+
+.row-four .contact button.awesome2 {
+    color:#4a4a4a;
+    margin:-40px 0 0 53%;
+    float:left;
+    position:relative;
+}

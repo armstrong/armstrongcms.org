@@ -1,0 +1,381 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Armstrong CMS - Open Source CMS for News</title>
+    <link rel="stylesheet" href="{{STATIC_URL}}css/reset-fonts.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/awesome.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="{{STATIC_URL}}js/jquery.form-defaults.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+         
+            $('a[href*=#]').click(function() {
+         
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                && location.hostname == this.hostname) {
+         
+                    var $target = $(this.hash);
+         
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+         
+                    if ($target.length) {
+         
+                        var targetOffset = $target.offset().top;
+         
+                        $('html,body').animate({scrollTop: targetOffset}, 700);
+         
+                        return false;
+         
+                    }
+         
+                }
+         
+            });
+            $('.error').hide(); 
+            $("#contact_submit").click(function() {  
+                // validate and process form here  
+                $('.error').hide();  
+                var name = $("input#contact_name").val();  
+                if (name == "" || name=="Name *") {  
+                    $("label#contact_name_error").show();  
+                    $("input#contact_name").focus();  
+                    return false;  
+                }  
+                var email = $("input#contact_email").val();  
+                if (email == "" || email=="Email *") {  
+                    $("label#contact_email_error").show();  
+                    $("input#contact_email").focus();  
+                    return false;  
+                }  
+
+                var company = $("input#contact_company").val();  
+                var message = $("textarea#contact_message").val();  
+
+                // ---- process form ----                
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message;  
+                
+                //alert (dataString);return false;  
+                $.ajax({  
+                  type: "POST",  
+                  url: "process.php",  
+                  data: dataString,  
+                  success: function() {  
+                    $('#contact_form').html("<div id='message'></div>");  
+                    $('#message').html("<h2>Contact Form Submitted!</h2>")
+                    .append("<p>We will be in touch soon.</p>")  
+                    .hide()  
+                    .fadeIn(1500, function() {  
+
+                    });  
+                  }  
+                });  
+                return false;  
+                
+            });  
+            
+            $("#bottom_contact_submit").click(function() {  
+                // validate and process form here  
+                $('.error').hide();  
+                var name = $("input#bottom_contact_name").val();  
+                if (name == "" || name=="Name *") {  
+                    $("label#bottom_contact_name_error").show();  
+                    $("input#bottom_contact_name").focus();  
+                    return false;  
+                }  
+                var email = $("input#bottom_contact_email").val();  
+                if (email == "" || email=="Email *") {  
+                    $("label#bottom_contact_email_error").show();  
+                    $("input#bottom_contact_email").focus();  
+                    return false;  
+                }  
+                
+                var company = $("input#bottom_contact_company").val();  
+                var message = $("textarea#bottom_contact_message").val();  
+
+                // ---- process form ----                
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message;  
+
+                //alert (dataString);return false;  
+                $.ajax({  
+                  type: "POST",  
+                  url: "http://www.baycitizen.org/contact/armstrong/",  
+                  data: dataString,  
+                  success: function() {  
+                    $('#bottom_contact_form').html("<div id='message'></div>");  
+                    $('#message').html("<h2>Contact Form Submitted!</h2>")
+                    .append("<p>We will be in touch soon.</p>")  
+                    .hide()  
+                    .fadeIn(1500, function() {  
+
+                    });  
+                  }  
+                });  
+                return false;  
+                
+            });  
+        });
+        $(document).ready(function() {
+            //Assign default value to form field #1
+            $("#contact_name").DefaultValue("Name *");
+            $("#contact_email").DefaultValue("Email *");
+            $("#contact_company").DefaultValue("Company/Organization");
+            $("#bottom_contact_name").DefaultValue("Name *");
+            $("#bottom_contact_email").DefaultValue("Email *");
+            $("#bottom_contact_company").DefaultValue("Company/Organization");
+        });
+        
+        
+        
+    </script>
+
+    <!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21940031-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+    
+</head>
+<body>
+    <div class="row row-one">
+        <div class="content">
+            <h1 id="logo">
+                <a href="#">
+                    Armstrong - Open-Source News
+                </a>
+            </h1>
+            <ul id="nav">
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li class="current">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <h2>Armstrong is an open-source publishing system designed for news organizations that gives your team the technology edge it needs to report in a media-rich environment.</h2>
+            <p class="bitaboutit">
+                Armstrong gives your team the tools and editorial workflow to build a sustainable and engaged audience. Available out of the box, Armstrong has deep integration with social media sites such as Facebook and Twitter, search engine optimization, tools to manage memberships and subscriptions, and much more.
+                <em>
+                    <span>Brought to you by the fine folks at:</span>
+                    <img src="{{STATIC_URL}}images/b2ub.png">
+                </em>
+            </p>
+            <div id="contact_form">
+                <form class="contact">
+                    <p>
+                        Interested in using Armstrong for your organization? Let us know and we’ll get in touch with you.
+                    </p>
+                    <div class="form-elements">
+                    <label class="error" for="contact_name" id="contact_name_error">This field is required.</label>
+                    <input class="textbox" type="text" id="contact_name" name="name" value="">
+
+                    <label class="error" for="contact_email" id="contact_email_error">This field is required.</label>
+                    <input class="textbox" type="text" id="contact_email" name="email" value="">
+
+                    <input class="textbox" type="text" id="contact_company" name="company" value="">
+                    <textarea id="contact_message" name="message" rows="8" cols="40">Yes, I am interested in using Armstrong CMS and would like someone to contact me with more information.</textarea>
+                    </div>
+                    <button class="awesome large yellow" id="contact_submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row dark row-two">
+        <div class="container">
+            <div class="content">
+                <h3><a name="features"></a>&mdash; A Few Notable Features &mdash;</h3>
+                <ul>
+                    <li>
+                        Multimedia-rich editorial workflows
+                    </li>
+                    <li>
+                        Membership management
+                    </li>
+                    <li>
+                        CRM integration (Sugar and Salesforce)
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Deep SEO and analytics integration
+                    </li>
+                    <li>
+                        Media management
+                    </li>
+                    <li>
+                        Mobile versions, including iPad, iPhone, Android and Blackberry
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Social media integration for all content
+                    </li>
+                    <li>
+                        Engagement tools, such as the daily quiz game, QRANK
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row light row-three">
+        <div class="container">
+            <div class="content">
+                <h3><a name="about"></a>&mdash; A Little Bit About Armstrong &mdash;</h3>
+                <div class="threecol">
+                    <p class="col">
+                        Armstrong is an open-source CMS that is freely available to any organization. It is the result of a collaboration between The Texas Tribune and Bay Citizen, and a grant from the John S. and James L. Knight Foundation. The first release is scheduled for June, 2011.
+                    </p>
+                    <p class="col">
+                        Armstrong is built on top of the Django framework, a Python web framework that was born in the hectic pace and pressing deadlines of a newsroom. It is flexible enough to handle 99% of the content any news organization generates and is customizable enough that developers can extend it to handle the 1% that makes your organization unique.
+                    </p>
+                    <p class="col last">
+                        Armstrong provides the software, and your organization provides the technical talent to create the design, setup the software, and migrate any existing content into the new system. Depending on the needs of your organization, this can be an in-house developer (or development team) or one of the many consulting firms that specialize in Django web applications.
+                    </p>
+                </div>
+                <h3><a name="faq"></a>&mdash; Frequently Asked Questions &mdash;</h3>
+                <div class="threecol">
+                    <dl class="col">
+                        <dt>
+                            What language/technology stack is Armstrong written in?
+                        </dt>
+                        <dd>
+                            Armstrong is written in Python and is based on the Django Framework.
+                        </dd>
+                        <!-- -->
+                        <dt>
+                           How much does it cost?
+                        </dt>
+                        <dd>
+                            Armstrong is open source and the source code is completely free. We do our best to provide an easily customizable platform with a straightforward initial setup. Depending on your staff and level of design and customization, implementation costs may vary greatly. We estimate that a typical design customization will cost approximately $15,000.
+                        </dd>
+                        <!-- -->
+                        <dt>
+                           How do we start using it? Do I need to hire a developer?
+                        </dt>
+                        <dd>
+                            Armstrong is a very powerful platform, and it can be customized to fit your needs. Because of this, we encourage you to employ a web developer to design and customize the look and feel of the site. We are partnering with several consulting firms to provide installation and customization services for the platform. Depending on your ongoing needs, you may wish to have a developer on staff to build custom modules for your site.
+                        </dd>
+                        <!-- -->
+                    </dl>
+                    <dl class="col">
+                        <dt>
+                            What about hosting?
+                        </dt>
+                        <dd>
+                            Armstrong does not directly offer any hosting. However, we do strive to make it as easy as possible to host your site. We have partnered with the cloud computing management platform, RightScale, to offer fully configured server images to launch your site using Amazon’s AWS services. This platform allows you to scale on-demand and provides you with the best tools in the industry. You may also choose to host the site at a host of your choosing. There are many companies that provide Django hosting.
+                        </dd>
+                        <dt>
+                            Will you be providing updates?
+                        </dt>
+                        <dd>
+                            We are constantly improving Armstrong and will continue to roll out updates to the platform. Updates will be announced on our site and sent out to users via email. It will be up to the individual sites to update their systems. Of course all updates will be released free of charge.
+                        </dd>
+                        <dt>
+                            Do you provide any support?
+                        </dt>
+                        <dd>
+                            We do not directly provide support for the platform. However, we will have online forums and issue tracking to make sure to address any issues that occur. Updates as a result of feedback will be released and announced to the entire network.
+                        </dd>
+                    </dl>
+                    <dl class="col last">
+                        <dt>
+                            When will Armstrong be available?
+                        </dt>
+                        <dd>
+                            Our first release is scheduled for June of 2011, but the base of Armstrong has been powering the Texas Tribune and Bay Citizen websites since 2009.
+                        </dd>
+                        <!-- -->
+                        <dt>
+                            How can my development team contribute back to Armstrong?
+                        </dt>
+                        <dd>
+                            Armstrong is an open-source project. Development happens on GitHub with discussion taking place on our Google Groups mailing list. For more information on contributing, check out our GitHub page.
+                        </dd>
+                        <!-- -->
+                        <dt>
+                            How do I move my current site to Armstrong?
+                        </dt>
+                        <dd>
+                            <p>Any content can be migrated to Armstrong. In many instances, a developer can have your content migrated to the Armstrong platform within a few days. Tweaking the look and feel takes a little bit longer, but extra care has been taken to make sure the process is as straight forward and easy as possible.</p>
+                            <p>Tools and documentation are provided as a guideline to get you started, but they’re not the full solution. Given the unique nature of many content management systems, you should engage the assistance of your development team or a third party consultant.</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row dark row-four">
+        <div class="container">
+            <div class="content">
+                <div class="left">
+                    <h2>Get in touch with the Armstrong team</h2>
+                    <p>
+                        If you have any questions or would like to help contribute to Armstrong, feel free to drop us a line and we’ll get back to you as soon as possible.
+                    </p>
+                    <p>
+                        Email: <a href="mailto:hello@armstrongcms.com">info@armstrongcms.org</a><br />
+                    </p>
+                </div>
+                <div id="bottom_contact_form">
+                    <form class="contact right">
+                        <div class="form-elements">
+                        <label class="error" for="bottom_contact_name" id="bottom_contact_name_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_name" name="name" value="">
+                        
+                        <label class="error" for="bottom_contact_email" id="bottom_contact_email_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_email" name="email" value="">
+                        <input class="textbox" type="text" id="bottom_contact_company" name="company" value="">
+                        <textarea id="bottom_contact_message" name="message" rows="8" cols="40">What’s on your mind?</textarea>
+                        </div>
+                        <button class="awesome2 small white" id="bottom_contact_submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row foot row-five">
+        <div class="content">
+            <p class="pbj">
+                Powered by Django. Live long and prosper.
+            <p>
+            <p>
+                Copyright 2011 Armstrong CMS. All Rights Reserved.
+            <p>
+        </div>
+    </div>
+    <!-- Start of Woopra Code -->
+    <script type="text/javascript">
+    var woo_settings = {idle_timeout:'300000', domain:'armstrongcms.org'};
+    (function(){
+    var wsc = document.createElement('script');
+    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+    wsc.type = 'text/javascript';
+    wsc.async = true;
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+    })();
+    </script>
+    <!-- End of Woopra Code -->
+</body>
+</html>
