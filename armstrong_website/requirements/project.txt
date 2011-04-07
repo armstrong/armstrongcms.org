@@ -3,5 +3,4 @@ argparse==1.1
 --extra-index-url=http://dist.gondor.io/dev/
 gondor==1.0a1.dev38
 wsgiref==0.1.2
-psycopg2==2.4
 django-chunks
