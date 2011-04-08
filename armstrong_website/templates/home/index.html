@@ -201,9 +201,9 @@
             </div>
         </div>
     </div>
-   {% chunk "features" %} 
-   {% chunk "about" %} 
-   {% chunk "faq" %}
+    {% if well %}
+        {{well.render|safe}}
+    {% endif %}
     <div class="row foot row-five">
         <div class="content">
             <p class="pbj">
