@@ -232,7 +232,6 @@ class ContactForm(forms.Form):
                                          password=settings.SOCKETLABS_PASSWORD)
         
         send_mail(fail_silently=fail_silently, connection=smtp_connection, **self.get_message_dict())
-        send_mail(fail_silently=fail_silently, **self.get_message_dict())
 		
 class ArmstrongContactForm(ContactForm):
     company = forms.CharField(max_length=100,
