@@ -4,5 +4,5 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), os.p
 sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir))
 
 from django.core.handlers.wsgi import WSGIHandler
-os.environ["DJANGO_SETTINGS_MODULE"] = "armstrong_website.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "armstrong_website.production_settings"
 application = WSGIHandler()
