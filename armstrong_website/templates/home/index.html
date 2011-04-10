@@ -53,14 +53,15 @@
 
                 var company = $("input#contact_company").val();  
                 var message = $("textarea#contact_message").val();  
-
+				var csrftoken = $('#contact_form input:hidden').val();
+				
                 // ---- process form ----                
-                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message;  
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message + '&csrfmiddlewaretoken=' + csrftoken;  
                 
                 //alert (dataString);return false;  
                 $.ajax({  
                   type: "POST",  
-                  url: "http://www.baycitizen.org/contact/armstrong/",  
+                  url: "/contact/",
                   data: dataString,  
                   success: function() {  
                     $('#contact_form').html("<div id='message'></div>");  
@@ -70,7 +71,7 @@
                     .fadeIn(1500, function() {  
 
                     });  
-                  }  
+                  },
                 });  
                 return false;  
                 
@@ -94,18 +95,19 @@
                 
                 var company = $("input#bottom_contact_company").val();  
                 var message = $("textarea#bottom_contact_message").val();  
+				var csrftoken = $('#bottom_contact_form input:hidden').val();
 
                 // ---- process form ----                
-                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message;  
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&message=' + message + '&csrfmiddlewaretoken=' + csrftoken;  
 
                 //alert (dataString);return false;  
                 $.ajax({  
                   type: "POST",  
-                  url: "http://www.baycitizen.org/contact/armstrong/",  
+                  url: "/contact/",  
                   data: dataString,  
                   success: function() {  
-                    $('#bottom_contact_form').html("<div id='message'></div>");  
-                    $('#message').html("<h2>Contact Form Submitted!</h2>")
+                    $('#bottom_contact_form').html("<div id='bottom-message'></div>");  
+                    $('#bottom-message').html("<h2>Contact Form Submitted!</h2>")
                     .append("<p>We will be in touch soon.</p>")  
                     .hide()  
                     .fadeIn(1500, function() {  
@@ -181,7 +183,7 @@
                 </em>
             </p>
             <div id="contact_form">
-                <form class="contact">
+                <form class="contact">{% csrf_token %}
                     <p>
                         Interested in using Armstrong for your organization? Let us know and we’ll get in touch with you.
                     </p>
@@ -203,6 +205,35 @@
     {% if well %}
         {{well.render|safe}}
     {% endif %}
+    <div class="row dark row-four">
+        <div class="container">
+            <div class="content">
+                <div class="left">
+                    <h2>Get in touch with the Armstrong team</h2>
+                    <p>
+                        If you have any questions or would like to help contribute to Armstrong, feel free to drop us a line and we’ll get back to you as soon as possible.
+                    </p>
+                    <p>
+                        Email: <a href="mailto:hello@armstrongcms.com">info@armstrongcms.org</a><br />
+                    </p>
+                </div>
+                <div id="bottom_contact_form">
+                    <form class="contact right">{% csrf_token %}
+                        <div class="form-elements">
+                        <label class="error" for="bottom_contact_name" id="bottom_contact_name_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_name" name="name" value="">
+                        
+                        <label class="error" for="bottom_contact_email" id="bottom_contact_email_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_email" name="email" value="">
+                        <input class="textbox" type="text" id="bottom_contact_company" name="company" value="">
+                        <textarea id="bottom_contact_message" name="message" rows="8" cols="40">What’s on your mind?</textarea>
+                        </div>
+                        <button class="awesome2 small white" id="bottom_contact_submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row foot row-five">
         <div class="content">
             <p class="pbj">

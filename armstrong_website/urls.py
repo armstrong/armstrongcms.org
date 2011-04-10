@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+    url(r'^contact/', include('contact_form.urls')),
     url(r'^$', 'home.views.index', name='home'),
 
     # Uncomment the admin/doc line below to enable admin documentation:

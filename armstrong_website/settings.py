@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'armstrong.core.arm_wells',
     'reversion',
     'chunks',
+    'contact_form',
     
     'home',
 )
@@ -156,6 +157,11 @@ LOGGING = {
         },
     }
 }
+
+DEFAULT_FROM_EMAIL = 'Armstrong <info@armstrongcms.org>'
+CONTACT_FORM_RECIPIENTS = (
+    ('Armstrong', 'info@armstrongcms.org'),
+)
 
 try:
     from local_settings import *
