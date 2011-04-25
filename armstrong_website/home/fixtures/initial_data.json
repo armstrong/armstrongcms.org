@@ -1,1 +1,1029 @@
-[{"pk": 9, "model": "contenttypes.contenttype", "fields": {"model": "chunk", "name": "chunk", "app_label": "chunks"}}, {"pk": 5, "model": "contenttypes.contenttype", "fields": {"model": "contenttype", "name": "content type", "app_label": "contenttypes"}}, {"pk": 2, "model": "contenttypes.contenttype", "fields": {"model": "group", "name": "group", "app_label": "auth"}}, {"pk": 8, "model": "contenttypes.contenttype", "fields": {"model": "logentry", "name": "log entry", "app_label": "admin"}}, {"pk": 4, "model": "contenttypes.contenttype", "fields": {"model": "message", "name": "message", "app_label": "auth"}}, {"pk": 1, "model": "contenttypes.contenttype", "fields": {"model": "permission", "name": "permission", "app_label": "auth"}}, {"pk": 6, "model": "contenttypes.contenttype", "fields": {"model": "session", "name": "session", "app_label": "sessions"}}, {"pk": 7, "model": "contenttypes.contenttype", "fields": {"model": "site", "name": "site", "app_label": "sites"}}, {"pk": 3, "model": "contenttypes.contenttype", "fields": {"model": "user", "name": "user", "app_label": "auth"}}, {"pk": "d6c953f6910d645c47ed68ae4aa76efd", "model": "sessions.session", "fields": {"expire_date": "2011-04-20 18:44:54", "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"}}, {"pk": "2d874a9bd6c0d861ec01bc091e453e66", "model": "sessions.session", "fields": {"expire_date": "2011-04-20 19:17:05", "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"}}, {"pk": 1, "model": "sites.site", "fields": {"domain": "example.com", "name": "example.com"}}, {"pk": 3, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2011-04-06 19:18:34", "object_repr": "faq", "object_id": "3", "change_message": "", "user": 1, "content_type": 9}}, {"pk": 2, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2011-04-06 19:17:16", "object_repr": "about", "object_id": "2", "change_message": "", "user": 1, "content_type": 9}}, {"pk": 1, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2011-04-06 19:15:24", "object_repr": "features", "object_id": "1", "change_message": "", "user": 1, "content_type": 9}}, {"pk": 1, "model": "chunks.chunk", "fields": {"content": "    <div class=\"row dark row-two\">\r\n        <div class=\"container\">\r\n            <div class=\"content\">\r\n                <h3><a name=\"features\"></a>&mdash; A Few Notable Features &mdash;</h3>\r\n                <ul>\r\n                    <li>\r\n                        Multimedia-rich editorial workflows\r\n                    </li>\r\n                    <li>\r\n                        Membership management\r\n                    </li>\r\n                    <li>\r\n                        CRM integration (Sugar and Salesforce)\r\n                    </li>\r\n                </ul>\r\n                <ul>\r\n                    <li>\r\n                        Deep SEO and analytics integration\r\n                    </li>\r\n                    <li>\r\n                        Media management\r\n                    </li>\r\n                    <li>\r\n                        Mobile versions, including iPad, iPhone, Android and Blackberry\r\n                    </li>\r\n                </ul>\r\n                <ul>\r\n                    <li>\r\n                        Social media integration for all content\r\n                    </li>\r\n                    <li>\r\n                        Engagement tools, such as the daily quiz game, QRANK\r\n                    </li>\r\n\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>", "key": "features"}}, {"pk": 2, "model": "chunks.chunk", "fields": {"content": "    <div class=\"row light row-three\">\r\n        <div class=\"container\">\r\n            <div class=\"content\">\r\n                <h3><a name=\"about\"></a>&mdash; A Little Bit About Armstrong &mdash;</h3>\r\n                <div class=\"threecol\">\r\n                    <p class=\"col\">\r\n                        Armstrong is an open-source CMS that is freely available to any organization. It is the result of a collaboration between The Texas Tribune and Bay Citizen, and a grant from the John S. and James L. Knight Foundation. The first release is scheduled for June, 2011.\r\n                    </p>\r\n                    <p class=\"col\">\r\n                        Armstrong is built on top of the Django framework, a Python web framework that was born in the hectic pace and pressing deadlines of a newsroom. It is flexible enough to handle 99% of the content any news organization generates and is customizable enough that developers can extend it to handle the 1% that makes your organization unique.\r\n                    </p>\r\n                    <p class=\"col last\">\r\n                        Armstrong provides the software, and your organization provides the technical talent to create the design, setup the software, and migrate any existing content into the new system. Depending on the needs of your organization, this can be an in-house developer (or development team) or one of the many consulting firms that specialize in Django web applications.\r\n                    </p>\r\n                </div>\r\n                <h3><a name=\"faq\"></a>&mdash; Frequently Asked Questions &mdash;</h3>\r\n                <div class=\"threecol\">\r\n                    <dl class=\"col\">\r\n                        <dt>\r\n                            What language/technology stack is Armstrong written in?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is written in Python and is based on the Django Framework.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                           How much does it cost?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is open source and the source code is completely free. We do our best to provide an easily customizable platform with a straightforward initial setup. Depending on your staff and level of design and customization, implementation costs may vary greatly. We estimate that a typical design customization will cost approximately $15,000.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                           How do we start using it? Do I need to hire a developer?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is a very powerful platform, and it can be customized to fit your needs. Because of this, we encourage you to employ a web developer to design and customize the look and feel of the site. We are partnering with several consulting firms to provide installation and customization services for the platform. Depending on your ongoing needs, you may wish to have a developer on staff to build custom modules for your site.\r\n                        </dd>\r\n                        <!-- -->\r\n                    </dl>\r\n                    <dl class=\"col\">\r\n                        <dt>\r\n                            What about hosting?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong does not directly offer any hosting. However, we do strive to make it as easy as possible to host your site. We have partnered with the cloud computing management platform, RightScale, to offer fully configured server images to launch your site using Amazon\u2019s AWS services. This platform allows you to scale on-demand and provides you with the best tools in the industry. You may also choose to host the site at a host of your choosing. There are many companies that provide Django hosting.\r\n                        </dd>\r\n                        <dt>\r\n                            Will you be providing updates?\r\n                        </dt>\r\n                        <dd>\r\n                            We are constantly improving Armstrong and will continue to roll out updates to the platform. Updates will be announced on our site and sent out to users via email. It will be up to the individual sites to update their systems. Of course all updates will be released free of charge.\r\n                        </dd>\r\n                        <dt>\r\n                            Do you provide any support?\r\n                        </dt>\r\n                        <dd>\r\n                            We do not directly provide support for the platform. However, we will have online forums and issue tracking to make sure to address any issues that occur. Updates as a result of feedback will be released and announced to the entire network.\r\n                        </dd>\r\n                    </dl>\r\n                    <dl class=\"col last\">\r\n                        <dt>\r\n                            When will Armstrong be available?\r\n                        </dt>\r\n                        <dd>\r\n                            Our first release is scheduled for June of 2011, but the base of Armstrong has been powering the Texas Tribune and Bay Citizen websites since 2009.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                            How can my development team contribute back to Armstrong?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is an open-source project. Development happens on GitHub with discussion taking place on our Google Groups mailing list. For more information on contributing, check out our GitHub page.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                            How do I move my current site to Armstrong?\r\n                        </dt>\r\n                        <dd>\r\n                            <p>Any content can be migrated to Armstrong. In many instances, a developer can have your content migrated to the Armstrong platform within a few days. Tweaking the look and feel takes a little bit longer, but extra care has been taken to make sure the process is as straight forward and easy as possible.</p>\r\n                            <p>Tools and documentation are provided as a guideline to get you started, but they\u2019re not the full solution. Given the unique nature of many content management systems, you should engage the assistance of your development team or a third party consultant.</p>\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>", "key": "about"}}, {"pk": 3, "model": "chunks.chunk", "fields": {"content": "    <div class=\"row dark row-four\">\r\n        <div class=\"container\">\r\n            <div class=\"content\">\r\n                <div class=\"left\">\r\n                    <h2>Get in touch with the Armstrong team</h2>\r\n                    <p>\r\n                        If you have any questions or would like to help contribute to Armstrong, feel free to drop us a line and we\u2019ll get back to you as soon as possible.\r\n                    </p>\r\n                    <p>\r\n                        Email: <a href=\"mailto:hello@armstrongcms.com\">info@armstrongcms.org</a><br />\r\n                    </p>\r\n                </div>\r\n                <div id=\"bottom_contact_form\">\r\n                    <form class=\"contact right\">\r\n                        <div class=\"form-elements\">\r\n                        <label class=\"error\" for=\"bottom_contact_name\" id=\"bottom_contact_name_error\">This field is required.</label>\r\n                        <input class=\"textbox\" type=\"text\" id=\"bottom_contact_name\" name=\"name\" value=\"\">\r\n                        \r\n                        <label class=\"error\" for=\"bottom_contact_email\" id=\"bottom_contact_email_error\">This field is required.</label>\r\n                        <input class=\"textbox\" type=\"text\" id=\"bottom_contact_email\" name=\"email\" value=\"\">\r\n                        <input class=\"textbox\" type=\"text\" id=\"bottom_contact_company\" name=\"company\" value=\"\">\r\n                        <textarea id=\"bottom_contact_message\" name=\"message\" rows=\"8\" cols=\"40\">What\u2019s on your mind?</textarea>\r\n                        </div>\r\n                        <button class=\"awesome2 small white\" id=\"bottom_contact_submit\">send</button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n", "key": "faq"}}, {"pk": 22, "model": "auth.permission", "fields": {"codename": "add_logentry", "name": "Can add log entry", "content_type": 8}}, {"pk": 23, "model": "auth.permission", "fields": {"codename": "change_logentry", "name": "Can change log entry", "content_type": 8}}, {"pk": 24, "model": "auth.permission", "fields": {"codename": "delete_logentry", "name": "Can delete log entry", "content_type": 8}}, {"pk": 4, "model": "auth.permission", "fields": {"codename": "add_group", "name": "Can add group", "content_type": 2}}, {"pk": 5, "model": "auth.permission", "fields": {"codename": "change_group", "name": "Can change group", "content_type": 2}}, {"pk": 6, "model": "auth.permission", "fields": {"codename": "delete_group", "name": "Can delete group", "content_type": 2}}, {"pk": 10, "model": "auth.permission", "fields": {"codename": "add_message", "name": "Can add message", "content_type": 4}}, {"pk": 11, "model": "auth.permission", "fields": {"codename": "change_message", "name": "Can change message", "content_type": 4}}, {"pk": 12, "model": "auth.permission", "fields": {"codename": "delete_message", "name": "Can delete message", "content_type": 4}}, {"pk": 1, "model": "auth.permission", "fields": {"codename": "add_permission", "name": "Can add permission", "content_type": 1}}, {"pk": 2, "model": "auth.permission", "fields": {"codename": "change_permission", "name": "Can change permission", "content_type": 1}}, {"pk": 3, "model": "auth.permission", "fields": {"codename": "delete_permission", "name": "Can delete permission", "content_type": 1}}, {"pk": 7, "model": "auth.permission", "fields": {"codename": "add_user", "name": "Can add user", "content_type": 3}}, {"pk": 8, "model": "auth.permission", "fields": {"codename": "change_user", "name": "Can change user", "content_type": 3}}, {"pk": 9, "model": "auth.permission", "fields": {"codename": "delete_user", "name": "Can delete user", "content_type": 3}}, {"pk": 25, "model": "auth.permission", "fields": {"codename": "add_chunk", "name": "Can add chunk", "content_type": 9}}, {"pk": 26, "model": "auth.permission", "fields": {"codename": "change_chunk", "name": "Can change chunk", "content_type": 9}}, {"pk": 27, "model": "auth.permission", "fields": {"codename": "delete_chunk", "name": "Can delete chunk", "content_type": 9}}, {"pk": 13, "model": "auth.permission", "fields": {"codename": "add_contenttype", "name": "Can add content type", "content_type": 5}}, {"pk": 14, "model": "auth.permission", "fields": {"codename": "change_contenttype", "name": "Can change content type", "content_type": 5}}, {"pk": 15, "model": "auth.permission", "fields": {"codename": "delete_contenttype", "name": "Can delete content type", "content_type": 5}}, {"pk": 16, "model": "auth.permission", "fields": {"codename": "add_session", "name": "Can add session", "content_type": 6}}, {"pk": 17, "model": "auth.permission", "fields": {"codename": "change_session", "name": "Can change session", "content_type": 6}}, {"pk": 18, "model": "auth.permission", "fields": {"codename": "delete_session", "name": "Can delete session", "content_type": 6}}, {"pk": 19, "model": "auth.permission", "fields": {"codename": "add_site", "name": "Can add site", "content_type": 7}}, {"pk": 20, "model": "auth.permission", "fields": {"codename": "change_site", "name": "Can change site", "content_type": 7}}, {"pk": 21, "model": "auth.permission", "fields": {"codename": "delete_site", "name": "Can delete site", "content_type": 7}}, {"pk": 1, "model": "auth.user", "fields": {"username": "armstrong", "first_name": "", "last_name": "", "is_active": true, "is_superuser": true, "is_staff": true, "last_login": "2011-04-06 19:17:05", "groups": [], "user_permissions": [], "password": "sha1$5b070$3757e62d7f5949fbfa42ebab8e06735a9ce5d1a3", "email": "info@armstrongcms.org", "date_joined": "2011-04-06 18:44:41"}}]
+[
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "chunk", 
+            "name": "chunk", 
+            "app_label": "chunks"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "node", 
+            "name": "node", 
+            "app_label": "arm_wells"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "revision", 
+            "name": "revision", 
+            "app_label": "reversion"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "version", 
+            "name": "version", 
+            "app_label": "reversion"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "well", 
+            "name": "well", 
+            "app_label": "arm_wells"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "welltype", 
+            "name": "well type", 
+            "app_label": "arm_wells"
+        }
+    }, 
+    {
+        "pk": "d6c953f6910d645c47ed68ae4aa76efd", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-20 18:44:54", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "2d874a9bd6c0d861ec01bc091e453e66", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-20 19:17:05", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "3ed631324c4d5af6b439e33cfbad79e2", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-20 20:38:00", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "4a97b1d48c3d84bbd47a9a3fc3240b72", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-21 01:47:46", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "92d0f98b24ab08fd143008998b5b9ded", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-21 01:50:56", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "388d59bfbaa80dca26cc88287d6afcc6", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-21 02:09:39", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "5fc5305b2e1e41ba4970508e1bc5588d", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-04-24 12:33:52", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "207c7378d85cc2fdea1edc3b4f6bed9e", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-05-09 15:52:57", 
+            "session_data": "YzYzZWI4NjVjOTI5ODE0YWM4NjU1YTljMDA3YzA2MTlhN2U4NjA3ZDqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
+        }
+    }, 
+    {
+        "pk": "072c4ee23a816ca9dc9e3a719092f08a", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-05-09 15:53:05", 
+            "session_data": "N2U5MzYxMDM2ZDE0MzkxMzRlYWMwMjY2Y2FlMTMzNjdiZWQ4YjVkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2011-04-10 12:34:57", 
+            "object_repr": "Generic (0): None", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2011-04-10 12:34:39", 
+            "object_repr": "faq", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-04-07 20:34:40", 
+            "object_repr": "Generic (0): features", 
+            "object_id": "1", 
+            "change_message": "Changed order.", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-04-07 20:32:33", 
+            "object_repr": "Generic (1): features", 
+            "object_id": "1", 
+            "change_message": "Changed order.", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-07 20:15:49", 
+            "object_repr": "Generic (0): faq", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-07 20:15:24", 
+            "object_repr": "Generic (0): about", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-04-07 19:56:23", 
+            "object_repr": "Generic", 
+            "object_id": "1", 
+            "change_message": "Changed title and slug.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-04-07 19:06:30", 
+            "object_repr": "Home Page Info", 
+            "object_id": "1", 
+            "change_message": "Changed title and slug.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-07 18:18:43", 
+            "object_repr": "Generic (0): features", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-07 18:18:02", 
+            "object_repr": "Generic (2011-04-07 16:17:47 - Never)", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-07 18:17:32", 
+            "object_repr": "Generic", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-06 19:18:34", 
+            "object_repr": "faq", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-06 19:17:16", 
+            "object_repr": "about", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-04-06 19:15:24", 
+            "object_repr": "features", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "arm_wells.welltype", 
+        "fields": {
+            "slug": "generic", 
+            "title": "Generic"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "arm_wells.well", 
+        "fields": {
+            "active": true, 
+            "pub_date": "2011-04-07 16:17:47", 
+            "expires": null, 
+            "type": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "arm_wells.node", 
+        "fields": {
+            "well": 1, 
+            "order": 0, 
+            "content_type": 9, 
+            "object_id": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "arm_wells.node", 
+        "fields": {
+            "well": 1, 
+            "order": 0, 
+            "content_type": 9, 
+            "object_id": 2
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Initial version.", 
+            "date_created": "2011-04-07 18:17:33", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Initial version.", 
+            "date_created": "2011-04-07 18:18:02", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Initial version.", 
+            "date_created": "2011-04-07 18:18:43", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Changed title and slug.", 
+            "date_created": "2011-04-07 19:06:31", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Changed title and slug.", 
+            "date_created": "2011-04-07 19:56:23", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Initial version.", 
+            "date_created": "2011-04-07 20:15:24", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Initial version.", 
+            "date_created": "2011-04-07 20:15:49", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Changed order.", 
+            "date_created": "2011-04-07 20:32:34", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "reversion.revision", 
+        "fields": {
+            "comment": "Changed order.", 
+            "date_created": "2011-04-07 20:34:40", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic", 
+            "object_id": "1", 
+            "content_type": 10, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.welltype\", \"fields\": {\"slug\": \"generic\", \"title\": \"Generic\"}}]", 
+            "revision": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (2011-04-07 16:17:47 - Never)", 
+            "object_id": "1", 
+            "content_type": 11, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.well\", \"fields\": {\"active\": true, \"pub_date\": \"2011-04-07 16:17:47\", \"expires\": null, \"type\": 1}}]", 
+            "revision": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (0): features", 
+            "object_id": "1", 
+            "content_type": 12, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.node\", \"fields\": {\"well\": 1, \"order\": 0, \"content_type\": 9, \"object_id\": 1}}]", 
+            "revision": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Home Page Info", 
+            "object_id": "1", 
+            "content_type": 10, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.welltype\", \"fields\": {\"slug\": \"home-info\", \"title\": \"Home Page Info\"}}]", 
+            "revision": 4
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic", 
+            "object_id": "1", 
+            "content_type": 10, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.welltype\", \"fields\": {\"slug\": \"generic\", \"title\": \"Generic\"}}]", 
+            "revision": 5
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (0): about", 
+            "object_id": "2", 
+            "content_type": 12, 
+            "serialized_data": "[{\"pk\": 2, \"model\": \"arm_wells.node\", \"fields\": {\"well\": 1, \"order\": 0, \"content_type\": 9, \"object_id\": 2}}]", 
+            "revision": 6
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (0): faq", 
+            "object_id": "3", 
+            "content_type": 12, 
+            "serialized_data": "[{\"pk\": 3, \"model\": \"arm_wells.node\", \"fields\": {\"well\": 1, \"order\": 0, \"content_type\": 9, \"object_id\": 3}}]", 
+            "revision": 7
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (1): features", 
+            "object_id": "1", 
+            "content_type": 12, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.node\", \"fields\": {\"well\": 1, \"order\": 1, \"content_type\": 9, \"object_id\": 1}}]", 
+            "revision": 8
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "reversion.version", 
+        "fields": {
+            "format": "json", 
+            "object_repr": "Generic (0): features", 
+            "object_id": "1", 
+            "content_type": 12, 
+            "serialized_data": "[{\"pk\": 1, \"model\": \"arm_wells.node\", \"fields\": {\"well\": 1, \"order\": 0, \"content_type\": 9, \"object_id\": 1}}]", 
+            "revision": 9
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "chunks.chunk", 
+        "fields": {
+            "content": "    <div class=\"row dark row-two\">\r\n        <div class=\"container\">\r\n            <div class=\"content\">\r\n                <h3><a name=\"features\"></a>&mdash; A Few Notable Features &mdash;</h3>\r\n                <ul>\r\n                    <li>\r\n                        Multimedia-rich editorial workflows\r\n                    </li>\r\n                    <li>\r\n                        Membership management\r\n                    </li>\r\n                    <li>\r\n                        CRM integration (Sugar and Salesforce)\r\n                    </li>\r\n                </ul>\r\n                <ul>\r\n                    <li>\r\n                        Deep SEO and analytics integration\r\n                    </li>\r\n                    <li>\r\n                        Media management\r\n                    </li>\r\n                    <li>\r\n                        Mobile versions, including iPad, iPhone, Android and Blackberry\r\n                    </li>\r\n                </ul>\r\n                <ul>\r\n                    <li>\r\n                        Social media integration for all content\r\n                    </li>\r\n                    <li>\r\n                        Engagement tools, such as the daily quiz game, QRANK\r\n                    </li>\r\n\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>", 
+            "key": "features"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "chunks.chunk", 
+        "fields": {
+            "content": "    <div class=\"row light row-three\">\r\n        <div class=\"container\">\r\n            <div class=\"content\">\r\n                <h3><a name=\"about\"></a>&mdash; A Little Bit About Armstrong &mdash;</h3>\r\n                <div class=\"threecol\">\r\n                    <p class=\"col\">\r\n                        Armstrong is an open-source CMS that is freely available to any organization. It is the result of a collaboration between The Texas Tribune and Bay Citizen, and a grant from the John S. and James L. Knight Foundation. The first release is scheduled for June, 2011.\r\n                    </p>\r\n                    <p class=\"col\">\r\n                        Armstrong is built on top of the Django framework, a Python web framework that was born in the hectic pace and pressing deadlines of a newsroom. It is flexible enough to handle 99% of the content any news organization generates and is customizable enough that developers can extend it to handle the 1% that makes your organization unique.\r\n                    </p>\r\n                    <p class=\"col last\">\r\n                        Armstrong provides the software, and your organization provides the technical talent to create the design, setup the software, and migrate any existing content into the new system. Depending on the needs of your organization, this can be an in-house developer (or development team) or one of the many consulting firms that specialize in Django web applications.\r\n                    </p>\r\n                </div>\r\n                <h3><a name=\"faq\"></a>&mdash; Frequently Asked Questions &mdash;</h3>\r\n                <div class=\"threecol\">\r\n                    <dl class=\"col\">\r\n                        <dt>\r\n                            What language/technology stack is Armstrong written in?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is written in Python and is based on the Django Framework.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                           How much does it cost?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is open source and the source code is completely free. We do our best to provide an easily customizable platform with a straightforward initial setup. Depending on your staff and level of design and customization, implementation costs may vary greatly. We estimate that a typical design customization will cost approximately $15,000.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                           How do we start using it? Do I need to hire a developer?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is a very powerful platform, and it can be customized to fit your needs. Because of this, we encourage you to employ a web developer to design and customize the look and feel of the site. We are partnering with several consulting firms to provide installation and customization services for the platform. Depending on your ongoing needs, you may wish to have a developer on staff to build custom modules for your site.\r\n                        </dd>\r\n                        <!-- -->\r\n                    </dl>\r\n                    <dl class=\"col\">\r\n                        <dt>\r\n                            What about hosting?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong does not directly offer any hosting. However, we do strive to make it as easy as possible to host your site. We have partnered with the cloud computing management platform, RightScale, to offer fully configured server images to launch your site using Amazon\u2019s AWS services. This platform allows you to scale on-demand and provides you with the best tools in the industry. You may also choose to host the site at a host of your choosing. There are many companies that provide Django hosting.\r\n                        </dd>\r\n                        <dt>\r\n                            Will you be providing updates?\r\n                        </dt>\r\n                        <dd>\r\n                            We are constantly improving Armstrong and will continue to roll out updates to the platform. Updates will be announced on our site and sent out to users via email. It will be up to the individual sites to update their systems. Of course all updates will be released free of charge.\r\n                        </dd>\r\n                        <dt>\r\n                            Do you provide any support?\r\n                        </dt>\r\n                        <dd>\r\n                            We do not directly provide support for the platform. However, we will have online forums and issue tracking to make sure to address any issues that occur. Updates as a result of feedback will be released and announced to the entire network.\r\n                        </dd>\r\n                    </dl>\r\n                    <dl class=\"col last\">\r\n                        <dt>\r\n                            When will Armstrong be available?\r\n                        </dt>\r\n                        <dd>\r\n                            Our first release is scheduled for June of 2011, but the base of Armstrong has been powering the Texas Tribune and Bay Citizen websites since 2009.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                            How can my development team contribute back to Armstrong?\r\n                        </dt>\r\n                        <dd>\r\n                            Armstrong is an open-source project. Development happens on GitHub with discussion taking place on our Google Groups mailing list. For more information on contributing, check out our GitHub page.\r\n                        </dd>\r\n                        <!-- -->\r\n                        <dt>\r\n                            How do I move my current site to Armstrong?\r\n                        </dt>\r\n                        <dd>\r\n                            <p>Any content can be migrated to Armstrong. In many instances, a developer can have your content migrated to the Armstrong platform within a few days. Tweaking the look and feel takes a little bit longer, but extra care has been taken to make sure the process is as straight forward and easy as possible.</p>\r\n                            <p>Tools and documentation are provided as a guideline to get you started, but they\u2019re not the full solution. Given the unique nature of many content management systems, you should engage the assistance of your development team or a third party consultant.</p>\r\n                        </dd>\r\n                    </dl>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>", 
+            "key": "about"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_node", 
+            "name": "Can add node", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_node", 
+            "name": "Can change node", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_node", 
+            "name": "Can delete node", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_well", 
+            "name": "Can add well", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_well", 
+            "name": "Can change well", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_well", 
+            "name": "Can delete well", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_welltype", 
+            "name": "Can add well type", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_welltype", 
+            "name": "Can change well type", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_welltype", 
+            "name": "Can delete well type", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_chunk", 
+            "name": "Can add chunk", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_chunk", 
+            "name": "Can change chunk", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_chunk", 
+            "name": "Can delete chunk", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_revision", 
+            "name": "Can add revision", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_revision", 
+            "name": "Can change revision", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_revision", 
+            "name": "Can delete revision", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_version", 
+            "name": "Can add version", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_version", 
+            "name": "Can change version", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_version", 
+            "name": "Can delete version", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "armstrong", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-04-25 15:53:05", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$5b070$3757e62d7f5949fbfa42ebab8e06735a9ce5d1a3", 
+            "email": "info@armstrongcms.org", 
+            "date_joined": "2011-04-06 18:44:41"
+        }
+    }
+]
