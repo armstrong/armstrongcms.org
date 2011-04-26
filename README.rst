@@ -9,8 +9,13 @@ Provides the current splash page for http://www.armstrongcms.org
 Usage
 -----
 
-**TODO**
+Note: For the contact form to work the following SOCKETLABS settings need to be set
 
+SOCKETLABS_HOST     = 
+SOCKETLABS_USER     = 
+SOCKETLABS_PASSWORD = 
+
+**TODO**
 
 Contributing
 ------------

@@ -1,0 +1,8 @@
+Contact Form Email Body.
+
+Name: {{name}}
+Email: {{email}}
+Company: {{company}}
+
+Body:
+{{body|safe}}

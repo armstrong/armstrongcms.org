@@ -1,0 +1,78 @@
+.awesome, .awesome:visited {
+	background: #222 url(../images/btn-grad.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 22px; 
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+ 
+	.awesome:hover							{ background-color: #111; color: #fff; }
+	.awesome:active							{ margin-top: 1px; }
+	.small.awesome, .small.awesome:visited 			{ font-size: 10px; padding: ; }
+	.awesome, .awesome:visited,
+	.medium.awesome, .medium.awesome:visited 		{ font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
+	.large.awesome, .large.awesome:visited 			{ font-size: 14px; padding: 8px 14px 9px; }
+	
+	.green.awesome, .green.awesome:visited		{ background-color: #91bd09; }
+	.green.awesome:hover						{ background-color: #749a02; }
+	.blue.awesome, .blue.awesome:visited		{ background-color: #005293; }
+	.blue.awesome:hover							{ background-color: #0162b0; }
+	.red.awesome, .red.awesome:visited			{ background-color: #b70700; }
+	.red.awesome:hover							{ background-color: #e90800; }
+	.magenta.awesome, .magenta.awesome:visited		{ background-color: #a9014b; }
+	.magenta.awesome:hover							{ background-color: #630030; }
+	.orange.awesome, .orange.awesome:visited		{ background-color: #E37222; }
+	.orange.awesome:hover							{ background-color: #f77f2a; }
+	.yellow.awesome, .yellow.awesome:visited		{ background-color: #ffb515; }
+	.yellow.awesome:hover							{ background-color: #fc9200; }
+	.grey.awesome, .yellow.awesome:visited		{ background-color: #c1c1c1; color: #525252; text-shadow: none; }
+	.grey.awesome:hover							{ background-color: #d4d4d4; color: #6d6d6d; }
+
+/**************** other awesome  ***********************/
+.awesome2, .awesome2:visited {
+	background: #222 url(../images/btn-grad2.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.25);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+ 
+	.awesome2:hover							{ background-color: #111; color: #fff; }
+	.awesome2:active							{ top: 1px; }
+	.small.awesome2, .small.awesome2:visited 			{ font-size: 11px; padding: ; }
+	.awesome2, .awesome2:visited,
+	.medium.awesome2, .medium.awesome2:visited 		{ font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
+	.large.awesome2, .large.awesome2:visited 			{ font-size: 14px; padding: 8px 14px 9px; }
+	
+	.green.awesome2, .green.awesome2:visited		{ background-color: #91bd09; }
+	.green.awesome2:hover						{ background-color: #749a02; }
+	.blue.awesome2, .blue.awesome2:visited		{ background-color: #2daebf; }
+	.blue.awesome2:hover							{ background-color: #007d9a; }
+	.red.awesome2, .red.awesome2:visited			{ background-color: #e33100; }
+	.red.awesome2:hover							{ background-color: #872300; }
+	.magenta.awesome2, .magenta.awesome2:visited		{ background-color: #a9014b; }
+	.magenta.awesome2:hover							{ background-color: #630030; }
+	.orange.awesome2, .orange.awesome2:visited		{ background-color: #ff5c00; }
+	.orange.awesome2:hover							{ background-color: #d45500; }
+	.yellow.awesome2, .yellow.awesome2:visited		{ background-color: #ffb515; }
+	.yellow.awesome2:hover							{ background-color: #fc9200; }
+	.white.awesome2, .yellow.awesome2:visited		{ background-color: #dedede; }
+	.white.awesome2:hover							{ background-color: #b2b2b2; }

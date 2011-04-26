@@ -1,0 +1,261 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Armstrong CMS - Open Source CMS for News</title>
+    <link rel="stylesheet" href="{{STATIC_URL}}css/reset-fonts.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/awesome.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="{{STATIC_URL}}js/jquery.form-defaults.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+         
+            $('a[href*=#]').click(function() {
+         
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                && location.hostname == this.hostname) {
+         
+                    var $target = $(this.hash);
+         
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+         
+                    if ($target.length) {
+         
+                        var targetOffset = $target.offset().top;
+         
+                        $('html,body').animate({scrollTop: targetOffset}, 700);
+         
+                        return false;
+         
+                    }
+         
+                }
+         
+            });
+            $('.error').hide(); 
+            $("#contact_submit").click(function() {  
+                // validate and process form here  
+                $('.error').hide();  
+                var name = $("input#contact_name").val();  
+                if (name == "" || name=="Name *") {  
+                    $("label#contact_name_error").show();  
+                    $("input#contact_name").focus();  
+                    return false;  
+                }  
+                var email = $("input#contact_email").val();  
+                if (email == "" || email=="Email *") {  
+                    $("label#contact_email_error").show();  
+                    $("input#contact_email").focus();  
+                    return false;  
+                }  
+
+                var company = $("input#contact_company").val();  
+                var message = $("textarea#contact_message").val();  
+				var csrftoken = $('#contact_form input:hidden').val();
+				
+                // ---- process form ----                
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&body=' + message + '&csrfmiddlewaretoken=' + csrftoken;  
+                
+                //alert (dataString);return false;  
+                $.ajax({  
+                  type: "POST",  
+                  url: "/contact/",
+                  data: dataString,  
+                  success: function() {  
+                    $('#contact_form').html("<div id='message'></div>");  
+                    $('#message').html("<h2>Contact Form Submitted!</h2>")
+                    .append("<p>We will be in touch soon.</p>")  
+                    .hide()  
+                    .fadeIn(1500, function() {  
+
+                    });  
+                  },
+                });  
+                return false;  
+                
+            });  
+            
+            $("#bottom_contact_submit").click(function() {  
+                // validate and process form here  
+                $('.error').hide();  
+                var name = $("input#bottom_contact_name").val();  
+                if (name == "" || name=="Name *") {  
+                    $("label#bottom_contact_name_error").show();  
+                    $("input#bottom_contact_name").focus();  
+                    return false;  
+                }  
+                var email = $("input#bottom_contact_email").val();  
+                if (email == "" || email=="Email *") {  
+                    $("label#bottom_contact_email_error").show();  
+                    $("input#bottom_contact_email").focus();  
+                    return false;  
+                }  
+                
+                var company = $("input#bottom_contact_company").val();  
+                var message = $("textarea#bottom_contact_message").val();  
+				var csrftoken = $('#bottom_contact_form input:hidden').val();
+
+                // ---- process form ----                
+                var dataString = 'name='+ name + '&email=' + email + '&company=' + company + '&body=' + message + '&csrfmiddlewaretoken=' + csrftoken;  
+
+                //alert (dataString);return false;  
+                $.ajax({  
+                  type: "POST",  
+                  url: "/contact/",  
+                  data: dataString,  
+                  success: function() {  
+                    $('#bottom_contact_form').html("<div id='bottom-message'></div>");  
+                    $('#bottom-message').html("<h2>Contact Form Submitted!</h2>")
+                    .append("<p>We will be in touch soon.</p>")  
+                    .hide()  
+                    .fadeIn(1500, function() {  
+
+                    });  
+                  }  
+                });  
+                return false;  
+                
+            });  
+        });
+        $(document).ready(function() {
+            //Assign default value to form field #1
+            $("#contact_name").DefaultValue("Name *");
+            $("#contact_email").DefaultValue("Email *");
+            $("#contact_company").DefaultValue("Company/Organization");
+            $("#bottom_contact_name").DefaultValue("Name *");
+            $("#bottom_contact_email").DefaultValue("Email *");
+            $("#bottom_contact_company").DefaultValue("Company/Organization");
+        });
+        
+        
+        
+    </script>
+
+    <!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21940031-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+    
+</head>
+<body>
+    <div class="row row-one">
+        <div class="content">
+            <h1 id="logo">
+                <a href="#">
+                    Armstrong - Open-Source News
+                </a>
+            </h1>
+            <ul id="nav">
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li class="current">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <h2>Armstrong is an open-source publishing system designed for news organizations that gives your team the technology edge it needs to report in a media-rich environment.</h2>
+            <p class="bitaboutit">
+                Armstrong gives your team the tools and editorial workflow to build a sustainable and engaged audience. Available out of the box, Armstrong has deep integration with social media sites such as Facebook and Twitter, search engine optimization, tools to manage memberships and subscriptions, and much more.
+                <em>
+                    <span>Brought to you by the fine folks at:</span>
+                    <img src="{{STATIC_URL}}images/b2ub.png">
+                </em>
+            </p>
+            <div id="contact_form">
+                <form class="contact">{% csrf_token %}
+                    <p>
+                        Interested in using Armstrong for your organization? Let us know and we’ll get in touch with you.
+                    </p>
+                    <div class="form-elements">
+                    <label class="error" for="contact_name" id="contact_name_error">This field is required.</label>
+                    <input class="textbox" type="text" id="contact_name" name="name" value="">
+
+                    <label class="error" for="contact_email" id="contact_email_error">This field is required.</label>
+                    <input class="textbox" type="text" id="contact_email" name="email" value="">
+
+                    <input class="textbox" type="text" id="contact_company" name="company" value="">
+                    <textarea id="contact_message" name="message" rows="8" cols="40">Yes, I am interested in using Armstrong CMS and would like someone to contact me with more information.</textarea>
+                    </div>
+                    <button class="awesome large yellow" id="contact_submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if well %}
+        {{well.render|safe}}
+    {% endif %}
+    <div class="row dark row-four">
+        <div class="container">
+            <div class="content">
+                <div class="left">
+                    <h2>Get in touch with the Armstrong team</h2>
+                    <p>
+                        If you have any questions or would like to help contribute to Armstrong, feel free to drop us a line and we’ll get back to you as soon as possible.
+                    </p>
+                    <p>
+                        Email: <a href="mailto:hello@armstrongcms.com">info@armstrongcms.org</a><br />
+                    </p>
+                </div>
+                <div id="bottom_contact_form">
+                    <form class="contact right">{% csrf_token %}
+                        <div class="form-elements">
+                        <label class="error" for="bottom_contact_name" id="bottom_contact_name_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_name" name="name" value="">
+                        
+                        <label class="error" for="bottom_contact_email" id="bottom_contact_email_error">This field is required.</label>
+                        <input class="textbox" type="text" id="bottom_contact_email" name="email" value="">
+                        <input class="textbox" type="text" id="bottom_contact_company" name="company" value="">
+                        <textarea id="bottom_contact_message" name="message" rows="8" cols="40">What’s on your mind?</textarea>
+                        </div>
+                        <button class="awesome2 small white" id="bottom_contact_submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row foot row-five">
+        <div class="content">
+            <p class="pbj">
+                Powered by <a href='http://djangoproject.com'>Django</a>. Hosted on <a href='http://gondor.io'>Gondor</a>. Live long and prosper.
+            <p>
+            <p>
+                Copyright 2011 Armstrong CMS. All Rights Reserved.
+            <p>
+        </div>
+    </div>
+    <!-- Start of Woopra Code -->
+    <script type="text/javascript">
+    var woo_settings = {idle_timeout:'300000', domain:'armstrongcms.org'};
+    (function(){
+    var wsc = document.createElement('script');
+    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+    wsc.type = 'text/javascript';
+    wsc.async = true;
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+    })();
+    </script>
+    <!-- End of Woopra Code -->
+</body>
+</html>
