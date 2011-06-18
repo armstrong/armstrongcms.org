@@ -2,6 +2,13 @@ html {
     background:url("../images/bg.png") repeat-x #8a421c;
 }
 
+a:link {
+    color: #068BBD;
+}
+a:visited {
+    color: #069cbd;
+}
+
 body {
     text-align:center;
     font-family:"Helvetica Neue","Helvetica",sans-serif;
