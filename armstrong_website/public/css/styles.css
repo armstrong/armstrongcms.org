@@ -119,10 +119,10 @@ body {
 }
 
 #logo a {
-    width:340px;
-    height:45px;
+    width:440px;
+    height:100px;
     display:block;
-    background:url("../images/logo.png") no-repeat;
+    background:url("../images/logo/armstrong_440x100_trans.png") no-repeat;
     overflow:hidden;
     text-indent:-999px;
 }

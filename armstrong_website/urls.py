@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     url(r'^$', SimpleWellView.as_view(template_name='home/index.html',
                                       well_title='Generic'), name='home'),
 
+    url(r'favicon\.ico', 'django.views.generic.simple.redirect_to', 
+        {'url': 'http://www.armstrongcms.org/images/logo/favicon_16.png'}),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
