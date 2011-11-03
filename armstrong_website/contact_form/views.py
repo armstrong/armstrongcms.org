@@ -76,6 +76,8 @@ def contact_form(request, form_class=ContactForm,
     if request.method == 'POST':
         form = form_class(data=request.POST, files=request.FILES, request=request)
         if form.is_valid():
+            form.from_email = '"%s" <%s>' % (form.cleaned_data['name'],
+                    form.cleaned_data['email'])
             form.save(fail_silently=fail_silently)
             if redirect:
                 return HttpResponseRedirect(success_url)
