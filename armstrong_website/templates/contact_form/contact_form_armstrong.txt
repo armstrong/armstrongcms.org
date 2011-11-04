@@ -1,8 +1,43 @@
-Contact Form Email Body.
+Thanks for your interest in the Armstrong Project!
 
-Name: {{name}}
-Email: {{email}}
-Company: {{company}}
+Here's a list of resources for the project that might help answer any questions
+you have about the platform.
 
-Body:
-{{body|safe}}
+Google Group: http://groups.google.com/group/armstrongcms
+    Armstrong's Google Group is our support hub for both implementation &
+    ongoing support.
+
+IRC Channel: #armstrongcms (Freenode)
+    You can find all of the development team on IRC most of the time.  Feel
+    free to reach out to us.
+
+Github Repository: https://github.com/armstrong/
+    You can track all of our development on GitHub.
+
+Documentation: http://docs.armstrongcms.org/
+    Our documentation is still a work-in-progress, but you can check out what
+    we do have here.
+
+
+You can also talk to us directly.
+
+For business or editorial question, contact:
+    HO Maycotte <hmaycotte@texastribune.org>, or
+    Brian Kelley <bkelley@baycitizen.org>
+
+For technical/development questions:
+    Travis Swicegood <tswicegood@texastribune.org>
+
+Have a great day!
+The Armstrong Team
+
+__
+Armstrong CMS
+http://armstrongcms.org
+https://github.com/armstrong/
+http://groups.google.com/group/armstrongcms
+Brought to you by: The Bay Citizen & The Texas Tribune
+
+{{ name }} <{{ email }}> from {{ company }} wrote:
+> {{ body }}
+
