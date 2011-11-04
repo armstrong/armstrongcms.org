@@ -254,6 +254,7 @@ class ArmstrongContactForm(ContactForm):
         from django.core.mail import EmailMessage
         message_dict = self.get_message_dict()
         message_dict["to"] = message_dict.pop("recipient_list")
+        message_dict["cc"] = [message_dict["from_email"], ]
         message_dict["body"] = message_dict.pop("message")
         message = EmailMessage(connection=smtp_connection,
                 bcc=[settings.BCC_EMAIL,], **message_dict)
