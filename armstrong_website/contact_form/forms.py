@@ -240,3 +240,7 @@ class ArmstrongContactForm(ContactForm):
     from_email = 'info@armstrongcms.org'
     subject_template_name = "contact_form/contact_form_subject_armstrong.txt"
     template_name = 'contact_form/contact_form_armstrong.txt'
+
+    @property
+    def recipient_list(self):
+        return [self.cleaned_data["email"], ]
