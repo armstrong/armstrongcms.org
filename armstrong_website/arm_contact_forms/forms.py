@@ -6,8 +6,6 @@ class ArmstrongContactForm(ContactForm):
                               widget=forms.TextInput(attrs=attrs_dict),
                               label=u'Company')
     from_email = 'info@armstrongcms.org'
-    subject_template_name = "contact_form/contact_form_subject_armstrong.txt"
-    template_name = 'contact_form/contact_form_armstrong.txt'
 
     @property
     def recipient_list(self):
