@@ -111,7 +111,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    
+
     map_path('templates'),
 )
 
@@ -126,12 +126,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    
+
     'armstrong.core.arm_wells',
     'reversion',
     'chunks',
     'contact_form',
-    
+
     'home',
 )
 
@@ -163,6 +163,7 @@ CONTACT_FORM_RECIPIENTS = (
     ('Armstrong', 'info@armstrongcms.org'),
 )
 
+# Load settings for Gondor
 try:
     from local_settings import *
 except ImportError:
