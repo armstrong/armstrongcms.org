@@ -5,6 +5,9 @@ TEMPLATE_DEBUG = False
 PRODUCTION = True
 
 try:
-    import local_settings
+    from armstrong_website.settings.private import *
 except ImportError:
-    pass
+    import sys
+    sys.stderr.write("Unable to load armstrong_website.settings.private\n")
+    sys.stderr.write("Please see the README for more information.")
+    sys.exit(1)
