@@ -1,0 +1,2 @@
+# gondor==1.0
+https://github.com/tswicegood/gondor-client/zipball/site_key # gondor 1.1.alpha.0 -- adds .gondor/site_key support
