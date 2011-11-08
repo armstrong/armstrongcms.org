@@ -10,5 +10,6 @@ django-contact-form==0.3.1
 boto==2.1.1
 
 # TODO: move to 0.2.x once this bugfix is incorporated
-https://github.com/kimsterv/django-ses/zipball/a367c8f992d1f4caf70ff925f7be7a71c0bc2549 # see https://github.com/hmarr/django-ses/pull/21
+# see https://github.com/hmarr/django-ses/pull/21
+-e git://github.com/kimsterv/django-ses.git@a367c8f992d1f4caf70ff925f7be7a71c0bc2549#egg=django-ses
 # django-ses==0.2
