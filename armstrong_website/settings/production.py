@@ -5,7 +5,7 @@ TEMPLATE_DEBUG = False
 PRODUCTION = True
 
 try:
-    from armstrong_website.settings.private import *
+    from .private import *
 except ImportError:
     import sys
     sys.stderr.write("Unable to load armstrong_website.settings.private\n")
