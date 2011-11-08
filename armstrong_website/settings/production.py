@@ -1,4 +1,4 @@
-from settings.defaults import *
+from .defaults import *
 
 DEBUG = False
 TEMPLATE_DEBUG = False
