@@ -148,6 +148,8 @@ LOGGING = {
     }
 }
 
+EMAIL_BACKEND = 'django_ses.SESBackend'
+
 DEFAULT_FROM_EMAIL = 'Armstrong <info@armstrongcms.org>'
 CONTACT_FORM_RECIPIENTS = (
     ('Armstrong', 'info@armstrongcms.org'),
