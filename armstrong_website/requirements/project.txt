@@ -10,4 +10,7 @@ django-reversion==1.5.0
 -e git://github.com/tinio/armstrong.core.arm_wells.git@admin#egg=armstrong.core.arm_wells
 django-contact-form==0.3.1
 boto==2.1.1
-django-ses==0.2
+
+# TODO: move to 0.2.x once this bugfix is incorporated
+https://github.com/kimsterv/django-ses/zipball/a367c8f992d1f4caf70ff925f7be7a71c0bc2549 # see https://github.com/hmarr/django-ses/pull/21
+# django-ses==0.2
