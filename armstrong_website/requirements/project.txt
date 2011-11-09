@@ -11,5 +11,5 @@ boto==2.1.1
 
 # TODO: move to 0.2.x once this bugfix is incorporated
 # see https://github.com/hmarr/django-ses/pull/21
--e git://github.com/kimsterv/django-ses.git@a367c8f992d1f4caf70ff925f7be7a71c0bc2549#egg=django-ses
+-e git://github.com/areski/django-ses.git@4dc6f8f6d31d70a9f91237d7ca4d9ebad51c16a1#egg=django-ses
 # django-ses==0.2
