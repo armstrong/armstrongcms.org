@@ -7,7 +7,7 @@ admin.autodiscover()
 from armstrong.core.arm_wells.views import SimpleWellView
 
 urlpatterns = patterns('',
-    url(r'^contact/', include('contact_form.urls')),
+    url(r'^contact/', include('arm_contact_forms.urls')),
     url(r'^$', SimpleWellView.as_view(template_name='home/index.html',
                                       well_title='Generic'), name='home'),
 
