@@ -118,6 +118,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 
     'armstrong.core.arm_wells',
+    'armstrong.hatband',
     'reversion',
     'chunks',
     'contact_form',
