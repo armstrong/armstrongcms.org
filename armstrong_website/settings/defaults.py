@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
 
+    'armstrong.core.arm_layout',
     'armstrong.core.arm_wells',
     'armstrong.hatband',
     'reversion',

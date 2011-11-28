@@ -1,3 +1,5 @@
+{% load layout_helpers %}
+
 <!DOCTYPE>
 <html lang="en">
 <head>
@@ -202,9 +204,13 @@
             </div>
         </div>
     </div>
+
     {% if well %}
-        {{well.render|safe}}
+    {% render_iter well.items|slice:":15" %}
+        {% render_remainder "generic" %}
+    {% endrender_iter %}
     {% endif %}
+
     <div class="row dark row-four">
         <div class="container">
             <div class="content">
