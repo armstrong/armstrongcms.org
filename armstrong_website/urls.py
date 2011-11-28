@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
-from django.contrib import admin
+from armstrong import hatband as admin
 admin.autodiscover()
 
 from armstrong.core.arm_wells.views import SimpleWellView
