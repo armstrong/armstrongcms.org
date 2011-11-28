@@ -4,6 +4,7 @@ argparse==1.1
 wsgiref==0.1.2
 django-chunks
 django-reversion==1.5.0
+south==0.7.3
 # TODO: update this so we're on a released version of armstrong.core.arm_wells
 -e git://github.com/tinio/armstrong.core.arm_wells.git@admin#egg=armstrong.core.arm_wells
 django-contact-form==0.3.1

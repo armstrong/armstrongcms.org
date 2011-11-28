@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     'reversion',
     'chunks',
     'contact_form',
+    'south',
 
     'home',
 )
