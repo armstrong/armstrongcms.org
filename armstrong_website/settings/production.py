@@ -1,13 +1,11 @@
+import os
 from .defaults import *
 
 DEBUG = False
 TEMPLATE_DEBUG = False
 PRODUCTION = True
 
-try:
-    from .private import *
-except ImportError:
-    import sys
-    sys.stderr.write("Unable to load armstrong_website.settings.private\n")
-    sys.stderr.write("Please see the README for more information.")
-    sys.exit(1)
+
+BCC_EMAIL = os.environ["BCC_EMAIL"]
+AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
