@@ -22,8 +22,8 @@ Documentation: http://docs.armstrongcms.org/
 You can also talk to us directly.
 
 For business or editorial question, contact:
-    HO Maycotte <hmaycotte@texastribune.org>, or
-    Brian Kelley <bkelley@baycitizen.org>
+    Rodney Gibbs <rgibbs@texastribune.org>, or
+    Chase Davis <cdavis@cironline.org>
 
 For technical/development questions:
     Travis Swicegood <tswicegood@texastribune.org>
