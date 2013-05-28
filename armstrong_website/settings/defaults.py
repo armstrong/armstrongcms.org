@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'reversion',
     'chunks',
     'contact_form',
+    'gunicorn',
     'south',
 
     'home',
