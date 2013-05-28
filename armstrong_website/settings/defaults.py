@@ -1,6 +1,8 @@
 # Django settings for armstrong_website project.
 import os
 
+import dj_database_url
+
 
 from . import helpers
 
@@ -12,7 +14,7 @@ ADMINS = (
     # ('Aurelio Tinio', 'atinio@armstrongcms.org'),
 )
 
-DATABASES = {'default': dj_database_url.parse(DATABASE_URL), }
+DATABASES = {'default': dj_database_url.parse(os.environ['DATABASE_URL']), }
 
 MANAGERS = ADMINS
 
