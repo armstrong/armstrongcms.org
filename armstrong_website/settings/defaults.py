@@ -12,6 +12,8 @@ ADMINS = (
     # ('Aurelio Tinio', 'atinio@armstrongcms.org'),
 )
 
+DATABASES = {'default': dj_database_url.parse(DATABASE_URL), }
+
 MANAGERS = ADMINS
 
 # Local time zone for this installation. Choices can be found here:
