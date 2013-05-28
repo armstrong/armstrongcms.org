@@ -13,6 +13,7 @@ boto==2.1.1
 psycopg2==2.4.5
 gunicorn==0.14.3
 eventlet==0.9.16
+dj-database-url==0.2.1
 
 # TODO: move to 0.2.x once this bugfix is incorporated
 # see https://github.com/hmarr/django-ses/pull/21
