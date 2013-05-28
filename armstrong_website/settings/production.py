@@ -1,8 +1,6 @@
 import os
 from .defaults import *
 
-DEBUG = False
-TEMPLATE_DEBUG = False
 PRODUCTION = True
 
 

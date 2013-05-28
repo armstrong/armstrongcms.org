@@ -7,7 +7,7 @@ import dj_database_url
 from . import helpers
 
 
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
