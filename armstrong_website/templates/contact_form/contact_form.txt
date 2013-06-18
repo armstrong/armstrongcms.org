@@ -36,7 +36,7 @@ Armstrong CMS
 http://armstrongcms.org
 https://github.com/armstrong/
 http://groups.google.com/group/armstrongcms
-Brought to you by: The Texas Tribune & The Center for Investigative Reporter
+Brought to you by: The Texas Tribune & The Center for Investigative Reporting
 
 {{ name }} <{{ email }}> from {{ company }} wrote:
 > {{ body }}
