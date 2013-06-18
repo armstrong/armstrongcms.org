@@ -23,7 +23,7 @@ You can also talk to us directly.
 
 For business or editorial question, contact:
     Rodney Gibbs <rgibbs@texastribune.org>, or
-    Chase Davis <cdavis@cironline.org>
+    Joaquin Alvarado <jalvarado@cironline.org>
 
 For technical/development questions:
     Travis Swicegood <tswicegood@texastribune.org>
@@ -36,7 +36,7 @@ Armstrong CMS
 http://armstrongcms.org
 https://github.com/armstrong/
 http://groups.google.com/group/armstrongcms
-Brought to you by: The Bay Citizen & The Texas Tribune
+Brought to you by: The Texas Tribune & The Center for Investigative Reporter
 
 {{ name }} <{{ email }}> from {{ company }} wrote:
 > {{ body }}
